@@ -50,3 +50,17 @@ console.log(students.indexOf("Alice")); // Output: 0
 console.log(students.lastIndexOf("Alice")); // Output: 3
 // c
 console.log(students.indexOf("Eve")); // Output: -1
+// d
+console.log(students.includes("Bob")); 
+// e
+console.log(students.includes("Eve"));
+// exercise 5: Advanced searching with find and findIndex
+const products = [
+  { id: 1, name: "Laptop", price: 999 },
+  { id: 2, name: "Phone", price: 599 },
+  { id: 3, name: "Tablet", price: 299 },
+  {id : 4, name: "Headphones", price: 199}
+];
+// a
+let foundProduct = products.find(product => product.id === 2);
+console.log(foundProduct);
