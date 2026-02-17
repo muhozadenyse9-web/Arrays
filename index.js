@@ -20,8 +20,25 @@ console.log(inventory);
 inventory.pop();
 console.log(inventory);
 // c
-inventory.unshift(5);
+inventory.unshift(25);
 console.log(inventory);
 // d
 inventory.shift();
 console.log(inventory);
+inventory.splice(1, 1, 25,35);
+console.log(inventory);
+// exercise 3: shallow copying of arrays and the reference trap
+// a
+const originalScores = [90, 85, 78];
+// b
+const referenceCopy = originalScores;
+console.log(originalScores);
+// c
+referenceCopy[0] = 100;
+console.log("originalScores:", originalScores);
+// d
+const spreadCopy = [...originalScores];
+spreadCopy[1] = 50;
+console.log("originalScores:", originalScores);
+console.log("spreadCopy:", spreadCopy);
+
