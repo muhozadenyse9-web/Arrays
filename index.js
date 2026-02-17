@@ -41,4 +41,12 @@ const spreadCopy = [...originalScores];
 spreadCopy[1] = 50;
 console.log("originalScores:", originalScores);
 console.log("spreadCopy:", spreadCopy);
-
+// Section B: Searching and checking
+// Exercise 4: finding elements by index and value
+const students = ["Alice", "Bob", "Charlie", "Alice", "David"];
+// a
+console.log(students.indexOf("Alice")); // Output: 0
+// b
+console.log(students.lastIndexOf("Alice")); // Output: 3
+// c
+console.log(students.indexOf("Eve")); // Output: -1
